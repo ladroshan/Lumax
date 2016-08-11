@@ -41,6 +41,7 @@
  - You must set **PATH** system variable environmentally in your system. [How to ?](https://www.java.com/en/download/help/path.xml)
  - **lumax.jar** generates only body part of the files because as you will use this again and again so removing the header part and footer part and then pasting it into your final appfilter.xml will make your work too hectic.
  - So better copy all code and paste it directly.
+ - While writing numbers for each app, write numbers only(not decimal numbers or any strings) otherwise it will create datatype error. Type only -1 to skip particular icon.
 
 ## Issue
 
