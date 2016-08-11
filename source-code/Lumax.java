@@ -39,14 +39,14 @@ public class Lumax
             appFilter=new Scanner(inputFile);
             while(appFilter.hasNextLine())
             {
-                String line=appFilter.nextLine();
-                if (line.contains("<item"))
+                String cLine=appFilter.nextLine();
+                if (cLine.contains("<item"))
                 {
-                    if(line.contains("<item component=") && line.contains("\"/>"))
+                    if(cLine.contains("<item component=") && cLine.contains("\"/>"))
                     {
                         DASHBOARD_TYPE=1;
                     }
-                    else if(line.contains("<item component=") && line.contains("\" />"))
+                    else if(cLine.contains("<item component=") && cLine.contains("\" />"))
                     {
                         DASHBOARD_TYPE=2;
                     }
@@ -189,21 +189,21 @@ public class Lumax
 
                 while(appFilter.hasNextLine())
                 {
-                    String line=appFilter.nextLine();
-                    if(line.contains("<!--"))
+                    String cLine=appFilter.nextLine();
+                    if(cLine.contains("<!--"))
                     {
-                        line=line.replace("<!--","").replace("-->","").trim();
-                        appName.add(line);
+                        cLine=cLine.replace("<!--","").replace("-->","").trim();
+                        appName.add(cLine);
                     }
-                    else if(line.contains("<item component="))
+                    else if(cLine.contains("<item component="))
                     {
-                        String pckge=line.substring(31,line.indexOf("/"));
+                        String pckge=cLine.substring(31,cLine.indexOf("/"));
                         packageName.add(pckge);
 
-                        String activity=line.substring(line.indexOf("/")+1,line.indexOf("}"));
+                        String activity=cLine.substring(cLine.indexOf("/")+1,cLine.indexOf("}"));
                         activityName.add(activity);
 
-                        String drawable=line.substring(line.indexOf("drawable=\"")+10,line.indexOf("\" />"));
+                        String drawable=cLine.substring(cLine.indexOf("drawable=\"")+10,cLine.indexOf("\" />"));
                         drawableName.add(drawable);
                     }
                 }
@@ -226,23 +226,23 @@ public class Lumax
 
                 while(appFilter.hasNextLine())
                 {
-                    String line=appFilter.nextLine();
-                    if(line.contains("<!--"))
+                    String cLine=appFilter.nextLine();
+                    if(cLine.contains("<!--"))
                     {
-                        line=line.replace("<!--","").replace("-->","").trim();
-                        appName.add(line);
+                        cLine=cLine.replace("<!--","").replace("-->","").trim();
+                        appName.add(cLine);
                     }
-                    else if(line.contains("component="))
+                    else if(cLine.contains("component="))
                     {
-                        String pckge=line.substring(line.indexOf("fo{")+3,line.indexOf("/"));
+                        String pckge=cLine.substring(cLine.indexOf("fo{")+3,cLine.indexOf("/"));
                         packageName.add(pckge);
 
-                        String activity=line.substring(line.indexOf("/")+1,line.indexOf("}"));
+                        String activity=cLine.substring(cLine.indexOf("/")+1,cLine.indexOf("}"));
                         activityName.add(activity);
                     }
-                    else if(line.contains("drawable="))
+                    else if(cLine.contains("drawable="))
                     {
-                        String drawable=line.substring(line.indexOf("drawable=\"")+10,line.indexOf("\" />"));
+                        String drawable=cLine.substring(cLine.indexOf("drawable=\"")+10,cLine.indexOf("\" />"));
                         drawableName.add(drawable);
                     }
                 }
@@ -265,21 +265,21 @@ public class Lumax
 
                 while(appFilter.hasNextLine())
                 {
-                    String line=appFilter.nextLine();
-                    if(line.contains("<!--"))
+                    String cLine=appFilter.nextLine();
+                    if(cLine.contains("<!--"))
                     {
-                        line=line.replace("<!--","").replace("-->","").trim();
-                        appName.add(line);
+                        cLine=cLine.replace("<!--","").replace("-->","").trim();
+                        appName.add(cLine);
                     }
-                    else if(line.contains("<item component="))
+                    else if(cLine.contains("<item component="))
                     {
-                        String pckge=line.substring(31,line.indexOf("/"));
+                        String pckge=cLine.substring(31,cLine.indexOf("/"));
                         packageName.add(pckge);
 
-                        String activity=line.substring(line.indexOf("/")+1,line.indexOf("}"));
+                        String activity=cLine.substring(cLine.indexOf("/")+1,cLine.indexOf("}"));
                         activityName.add(activity);
 
-                        String drawable=line.substring(line.indexOf("drawable=\"")+10,line.indexOf("\"/>"));
+                        String drawable=cLine.substring(cLine.indexOf("drawable=\"")+10,cLine.indexOf("\"/>"));
                         drawableName.add(drawable);
                     }
                 }
