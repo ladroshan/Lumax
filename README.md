@@ -32,7 +32,7 @@
 - Then everything is self explanatory.
 
  Still have a doubt ?
- check out this [video tutorial](https://www.youtube.com/channel/UCSjUfxZb7gfqBsseFNKcWVw) 
+ check out this [slideshow tutorial](https://www.youtube.com/watch?v=GhkFhtKacoM) 
 
 ## Beware
 
