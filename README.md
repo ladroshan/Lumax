@@ -32,7 +32,7 @@
 - Then everything is self explanatory.
 
  Still have a doubt ?
- check out this [slideshow tutorial](https://www.youtube.com/watch?v=GhkFhtKacoM) 
+ check out this [video tutorial](https://www.youtube.com/watch?v=0BI7NKvhtSA) 
 
 ## Beware
 
@@ -52,3 +52,4 @@ You think there is problem somewhere, please feel free to open an issue in this 
 **lumax.jar** is open source, so you can download the source code from this repository and play with it in whatever way you want.
 
 ## Thank you
+
