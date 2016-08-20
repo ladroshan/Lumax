@@ -159,7 +159,7 @@ public class Lumax
                 {
                     continue;
                 }
-                appfilterBuilder.println("<!-- "+appName.get(i)+" -->\n<item component=\"ComponentInfo{"+packageName.get(i)+"/"+activityName.get(i)+"\" drawable=\""+finalDrawable.get(userIndex.get(i))+"\"/>\n");
+                appfilterBuilder.println("<!-- "+appName.get(i)+" -->\n<item component=\"ComponentInfo{"+packageName.get(i)+"/"+activityName.get(i)+"}\" drawable=\""+finalDrawable.get(userIndex.get(i))+"\"/>\n");
                 themeresoucesBuilder.println("<!-- "+appName.get(i)+" -->\n<AppIcon name=\""+packageName.get(i)+"/"+activityName.get(i)+"\" image=\""+finalDrawable.get(userIndex.get(i))+"\"/>\n");
                 appmapBuilder.println("<!-- "+appName.get(i)+" -->\n<item class=\""+activityName.get(i)+"\" name=\""+finalDrawable.get(userIndex.get(i))+"\"/>\n");
                 drawableBuilder.println("<!-- "+appName.get(i)+" -->\n<item drawable=\""+finalDrawable.get(userIndex.get(i))+"\"/>\n");
